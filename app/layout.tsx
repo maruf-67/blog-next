@@ -28,6 +28,12 @@ export default function RootLayout({
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
       >
         {children}
+
+        <div className="fixed bottom-0 left-0 right-0 flex items-center justify-center bg-gray-800 text-white p-4">
+          <p className="text-sm">
+            &copy; {new Date().getFullYear()} My Company. All rights reserved.
+          </p>
+        </div>
       </body>
     </html>
   );
